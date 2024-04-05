@@ -1,0 +1,14 @@
+<h1>Spiderman</h1>
+<dl>
+  <td>{{ name }}</td>
+  <dd>{{ age }}</dd>
+</dl>
+
+<div class="general">
+  <div>
+    <button (click)="changueAge()">Cambiar Edad</button>
+  </div>
+  <div *ngIf="name != 'Gorgorito'">
+    <button (click)="changueHero()">Cambiar Nombre</button>
+  </div>
+</div>
